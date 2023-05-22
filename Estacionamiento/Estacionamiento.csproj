@@ -87,5 +87,44 @@
   <ItemGroup>
     <None Include="Resources\cancelar %282%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro1 - derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro2 - derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro3 - derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro1 - arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro1 -izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro1 - abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro2 - arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro2 - abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro2 - izquierda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro2 - abajo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro3 - abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro3 - arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro3 - izquierda.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
