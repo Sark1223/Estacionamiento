@@ -11,3 +11,15 @@ C:\Users\edwin\OneDrive\Desktop\Semestre 4\Arquitectura de Computadoras\Proyecto
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Arquitectura de Computadoras\Proyecto\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CopyComplete
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Arquitectura de Computadoras\Proyecto\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
 C:\Users\edwin\OneDrive\Desktop\Semestre 4\Arquitectura de Computadoras\Proyecto\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe.config
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.pdb
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.AssemblyReference.cache
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.SuggestedBindingRedirects.cache
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Form1.resources
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Properties.Resources.resources
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.GenerateResource.cache
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CoreCompileInputs.cache
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CopyComplete
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
+C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
