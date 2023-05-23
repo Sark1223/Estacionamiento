@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Estacionamiento
 {
-    public partial class Form1 : Form
+    public partial class Pantalla : Form
     {
-        public Form1()
+        public Pantalla()
         {
             InitializeComponent();
         }
 
-        private void bunifuImageButton1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
+        private void Pantalla_Load(object sender, EventArgs e)
         {
 
         }
-
     }
 }
