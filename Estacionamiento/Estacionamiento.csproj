@@ -135,5 +135,23 @@
   <ItemGroup>
     <None Include="Resources\carro3 - izquierda.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marca-x-Blanca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\atras %282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arriba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\guardia.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

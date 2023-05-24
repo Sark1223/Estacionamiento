@@ -23,3 +23,16 @@ C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estaci
 C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CopyComplete
 C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
 C:\Users\jorge\Documents\GitHub\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe.config
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.exe
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\bin\Debug\Estacionamiento.pdb
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.AssemblyReference.cache
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.SuggestedBindingRedirects.cache
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Form1.resources
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Pantalla.resources
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Properties.Resources.resources
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.GenerateResource.cache
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CoreCompileInputs.cache
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CopyComplete
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
+C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
