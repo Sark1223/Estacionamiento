@@ -117,33 +117,33 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label11.Location = new System.Drawing.Point(390, 42);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 20);
+            this.label11.Size = new System.Drawing.Size(93, 18);
             this.label11.TabIndex = 6;
             this.label11.Text = "Ocupados: 3";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label10.Location = new System.Drawing.Point(186, 42);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(106, 20);
+            this.label10.Size = new System.Drawing.Size(101, 18);
             this.label10.TabIndex = 5;
             this.label10.Text = "Disponibles: 3";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label9.Location = new System.Drawing.Point(51, 42);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 20);
+            this.label9.Size = new System.Drawing.Size(73, 18);
             this.label9.TabIndex = 4;
             this.label9.Text = "Totales: 6";
             // 
@@ -243,6 +243,7 @@
             this.A2.Size = new System.Drawing.Size(134, 68);
             this.A2.TabIndex = 2;
             this.A2.Click += new System.EventHandler(this.A2_Click);
+            this.A2.Paint += new System.Windows.Forms.PaintEventHandler(this.A2_Paint);
             // 
             // lblA2
             // 
@@ -302,7 +303,7 @@
             this.cmdEstacionar.FlatAppearance.BorderSize = 2;
             this.cmdEstacionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.cmdEstacionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdEstacionar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdEstacionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdEstacionar.ForeColor = System.Drawing.Color.YellowGreen;
             this.cmdEstacionar.Location = new System.Drawing.Point(360, 318);
             this.cmdEstacionar.Name = "cmdEstacionar";
@@ -317,7 +318,7 @@
             this.cmdDesestacionar.FlatAppearance.BorderSize = 2;
             this.cmdDesestacionar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.cmdDesestacionar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdDesestacionar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdDesestacionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdDesestacionar.ForeColor = System.Drawing.Color.IndianRed;
             this.cmdDesestacionar.Location = new System.Drawing.Point(54, 318);
             this.cmdDesestacionar.Name = "cmdDesestacionar";
@@ -341,11 +342,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(233, -2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 38);
+            this.label1.Size = new System.Drawing.Size(164, 37);
             this.label1.TabIndex = 28;
             this.label1.Text = "Aplicación";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;

@@ -47,11 +47,16 @@ namespace Estacionamiento
                     //A2.BackColor = Color.Crimson;
                     carro1 = "Estacionado";
                 }
+                else if (Lugar == "B1")
+                {
+                    //A2.BackColor = Color.Crimson;
+                    carro2 = "Estacionado";
+                }
                 this.Close();
             }
         }
 
-        string carro1 = "Descestacionado";
+        string carro1 = "Descestacionado", carro2 = "Descestacionado", carro3 = "Descestacionado";
         private void cmdDesestacionar_Click(object sender, EventArgs e)
         {
             if (Lugar == "Ninguno")
@@ -72,6 +77,10 @@ namespace Estacionamiento
                     //A2.BackColor = Color.Crimson;
                     carro1 = "Descestacionado";
                 }
+                else if(Lugar == "B1")
+                {
+                    carro2 = "Descestacionado";
+                }
                 this.Close();
             }
         }
@@ -84,8 +93,6 @@ namespace Estacionamiento
             if(panel.BackColor == Color.Crimson)
             {
                 Lugar = lbl.Text;
-                //CambiarFocoOcupado();
-                //MessageBox.Show("Ha seleccionado un lugar ocupado");
                 estado = "Ocupado";
                 return true;
             }
@@ -203,6 +210,12 @@ namespace Estacionamiento
         }
 
         Panel pnAnterior, pnActual;
+
+        private void A2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         Color colorAnterior;
         public void CambiarFoco(Panel panelAN)
         {

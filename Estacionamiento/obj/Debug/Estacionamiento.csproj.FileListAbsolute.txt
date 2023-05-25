@@ -36,3 +36,4 @@ C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\
 C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.csproj.CopyComplete
 C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.exe
 C:\Users\perro\OneDrive - tec tijuana\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.pdb
+C:\Users\edwin\OneDrive\Desktop\Semestre 4\Arquitectura de Computadoras\Proyecto\Estacionamiento\Estacionamiento\obj\Debug\Estacionamiento.Pantalla.resources

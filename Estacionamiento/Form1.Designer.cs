@@ -105,6 +105,9 @@
             this.cmdAplicacion = new System.Windows.Forms.Button();
             this.pnLimAbajo = new System.Windows.Forms.Panel();
             this.rdcmdAplicacion = new ns1.BunifuElipse(this.components);
+            this.pbCarro4 = new System.Windows.Forms.PictureBox();
+            this.pbCarro5 = new System.Windows.Forms.PictureBox();
+            this.pbCarro6 = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -132,6 +135,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro6)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -149,11 +155,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Mistral", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(365, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(347, 38);
+            this.label1.Size = new System.Drawing.Size(464, 37);
             this.label1.TabIndex = 2;
             this.label1.Text = "Simulación de Estacionamiento";
             this.label1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -803,7 +809,7 @@
             this.cmdAplicacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.cmdAplicacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
             this.cmdAplicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdAplicacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAplicacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmdAplicacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.cmdAplicacion.Location = new System.Drawing.Point(64, 288);
             this.cmdAplicacion.Name = "cmdAplicacion";
@@ -825,12 +831,52 @@
             this.rdcmdAplicacion.ElipseRadius = 21;
             this.rdcmdAplicacion.TargetControl = this.cmdAplicacion;
             // 
+            // pbCarro4
+            // 
+            this.pbCarro4.Image = global::Estacionamiento.Properties.Resources.carro1___derecha;
+            this.pbCarro4.Location = new System.Drawing.Point(0, 48);
+            this.pbCarro4.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCarro4.Name = "pbCarro4";
+            this.pbCarro4.Size = new System.Drawing.Size(92, 55);
+            this.pbCarro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarro4.TabIndex = 49;
+            this.pbCarro4.TabStop = false;
+            this.pbCarro4.Visible = false;
+            // 
+            // pbCarro5
+            // 
+            this.pbCarro5.Image = global::Estacionamiento.Properties.Resources.carro3___derecha;
+            this.pbCarro5.Location = new System.Drawing.Point(99, 51);
+            this.pbCarro5.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCarro5.Name = "pbCarro5";
+            this.pbCarro5.Size = new System.Drawing.Size(92, 56);
+            this.pbCarro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarro5.TabIndex = 50;
+            this.pbCarro5.TabStop = false;
+            this.pbCarro5.Visible = false;
+            // 
+            // pbCarro6
+            // 
+            this.pbCarro6.Image = global::Estacionamiento.Properties.Resources.carro2___derecha;
+            this.pbCarro6.Location = new System.Drawing.Point(870, 201);
+            this.pbCarro6.Margin = new System.Windows.Forms.Padding(2);
+            this.pbCarro6.Name = "pbCarro6";
+            this.pbCarro6.Size = new System.Drawing.Size(92, 58);
+            this.pbCarro6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCarro6.TabIndex = 51;
+            this.pbCarro6.TabStop = false;
+            this.pbCarro6.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 601);
+            this.Controls.Add(this.pbCarro2);
+            this.Controls.Add(this.pbCarro6);
+            this.Controls.Add(this.pbCarro5);
+            this.Controls.Add(this.pbCarro4);
             this.Controls.Add(this.cmdAplicacion);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox11);
@@ -889,7 +935,6 @@
             this.Controls.Add(this.pbFlechaIzq);
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pbCarro3);
-            this.Controls.Add(this.pbCarro2);
             this.Controls.Add(this.pnLimAbajo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
@@ -924,6 +969,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCarro6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1006,6 +1054,9 @@
         private System.Windows.Forms.Button cmdAplicacion;
         private System.Windows.Forms.Panel pnLimAbajo;
         private ns1.BunifuElipse rdcmdAplicacion;
+        private System.Windows.Forms.PictureBox pbCarro4;
+        private System.Windows.Forms.PictureBox pbCarro6;
+        private System.Windows.Forms.PictureBox pbCarro5;
     }
 }
 
