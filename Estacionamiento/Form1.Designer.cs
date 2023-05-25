@@ -102,7 +102,9 @@
             this.pbCarro2 = new System.Windows.Forms.PictureBox();
             this.pbCarro1 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.cmdAplicacion = new System.Windows.Forms.Button();
+            this.pnLimAbajo = new System.Windows.Forms.Panel();
+            this.rdcmdAplicacion = new ns1.BunifuElipse(this.components);
             this.pnlTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -670,7 +672,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Estacionamiento.Properties.Resources.carro2___izquierda;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 413);
+            this.pictureBox8.Location = new System.Drawing.Point(26, 410);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(92, 59);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -680,7 +682,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Estacionamiento.Properties.Resources.carro1___abajo;
-            this.pictureBox7.Location = new System.Drawing.Point(219, 464);
+            this.pictureBox7.Location = new System.Drawing.Point(207, 457);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(56, 84);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -690,7 +692,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Estacionamiento.Properties.Resources.carro3___arriba;
-            this.pictureBox6.Location = new System.Drawing.Point(172, 241);
+            this.pictureBox6.Location = new System.Drawing.Point(197, 239);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(56, 84);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -720,7 +722,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Estacionamiento.Properties.Resources.carro3___abajo;
-            this.pictureBox3.Location = new System.Drawing.Point(55, 281);
+            this.pictureBox3.Location = new System.Drawing.Point(172, 137);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(63, 84);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -786,22 +788,42 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::Estacionamiento.Properties.Resources.carro1__izquierda;
-            this.pictureBox15.Location = new System.Drawing.Point(121, 548);
+            this.pictureBox15.Location = new System.Drawing.Point(12, 523);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(92, 54);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 46;
             this.pictureBox15.TabStop = false;
             // 
-            // button1
+            // cmdAplicacion
             // 
-            this.button1.Location = new System.Drawing.Point(83, 191);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(164, 23);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.cmdAplicacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdAplicacion.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.cmdAplicacion.FlatAppearance.BorderSize = 0;
+            this.cmdAplicacion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.cmdAplicacion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.PaleVioletRed;
+            this.cmdAplicacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdAplicacion.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAplicacion.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmdAplicacion.Location = new System.Drawing.Point(64, 288);
+            this.cmdAplicacion.Name = "cmdAplicacion";
+            this.cmdAplicacion.Size = new System.Drawing.Size(127, 77);
+            this.cmdAplicacion.TabIndex = 47;
+            this.cmdAplicacion.Text = "Ir a la aplicación";
+            this.cmdAplicacion.UseVisualStyleBackColor = false;
+            this.cmdAplicacion.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pnLimAbajo
+            // 
+            this.pnLimAbajo.Location = new System.Drawing.Point(690, 471);
+            this.pnLimAbajo.Name = "pnLimAbajo";
+            this.pnLimAbajo.Size = new System.Drawing.Size(22, 17);
+            this.pnLimAbajo.TabIndex = 48;
+            // 
+            // rdcmdAplicacion
+            // 
+            this.rdcmdAplicacion.ElipseRadius = 21;
+            this.rdcmdAplicacion.TargetControl = this.cmdAplicacion;
             // 
             // Form1
             // 
@@ -809,7 +831,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 601);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.cmdAplicacion);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pnBanqueta2);
@@ -868,6 +890,7 @@
             this.Controls.Add(this.pictureBox12);
             this.Controls.Add(this.pbCarro3);
             this.Controls.Add(this.pbCarro2);
+            this.Controls.Add(this.pnLimAbajo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -980,7 +1003,9 @@
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdAplicacion;
+        private System.Windows.Forms.Panel pnLimAbajo;
+        private ns1.BunifuElipse rdcmdAplicacion;
     }
 }
 
