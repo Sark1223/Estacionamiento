@@ -57,6 +57,10 @@ namespace Estacionamiento
         {
             car5 = new Thread(new ThreadStart(Estacionar_Carro5));
         }
+        public void DesestacionarCarro5()
+        {
+            car5 = new Thread(new ThreadStart(Desestacionar_Carro5));
+        }
         public void Estacionar_carro1()
         {
             pbCarro1.Image = Properties.Resources.carro1___derecha;
@@ -461,10 +465,7 @@ namespace Estacionamiento
                 Thread.Sleep(20);
             }
         }
-        public void DesestacionarCarro5()
-        {
-            car5 = new Thread(new ThreadStart(Desestacionar_Carro5));
-        }
+        
         public void Desestacionar_Carro5()
         {
             bool izquierda1 = true, abajo1 = true;
@@ -476,6 +477,7 @@ namespace Estacionamiento
                     {
                         pbCarro5.Size = new Size(56, 84);
                         pbCarro5.Image = Properties.Resources.carro3___abajo;
+                        pbCarro5.Visible = true;
                         izquierda1 = false;
                     }
                     if (!Abajo(pbCarro5, pnLimAbajo.Location.Y, abajo1))
@@ -489,9 +491,9 @@ namespace Estacionamiento
                         }
                         if (!Izquierda(pbCarro5, 0 - pbCarro5.Width, true))
                         {
-                            MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            cmdAplicacion.Enabled = true;
-                            car5.Abort();
+                                MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                cmdAplicacion.Enabled = true;
+                                car5.Abort();
                         }
                     }
                 }
@@ -628,6 +630,7 @@ namespace Estacionamiento
                     pantalla.B3.BackColor = Color.Crimson;
                 }
             }
+            //Carro4
             else if (pantalla.Lugar == pantalla.lblA3.Text)
             {
                 if (pantalla.Accion == "Estacionar")
@@ -639,6 +642,12 @@ namespace Estacionamiento
 
                     pantalla.A3.BackColor = Color.Crimson;
                 }
+                else if (pantalla.Accion == "Descestacionar")
+                {
+                    DesestacionarCarro4();
+                    car4.Start();
+                    cmdAplicacion.Enabled = false;
+                }
             }
             else if (pantalla.Lugar == pantalla.lblA1.Text)
             {
@@ -649,7 +658,16 @@ namespace Estacionamiento
                     car5.Start();
                     cmdAplicacion.Enabled = false;
 
+                    cmdAplicacion.Text = "" + car5.ThreadState.ToString();
+
                     pantalla.A1.BackColor = Color.Crimson;
+                }
+                else if (pantalla.Accion == "Descestacionar")
+                {
+                    pbCarro5.Visible = true;
+                    DesestacionarCarro5();
+                    car5.Start();
+                    cmdAplicacion.Enabled = false;
                 }
             }
         }
@@ -674,6 +692,7 @@ namespace Estacionamiento
                     car1.Start();
 
                     pantalla.A2.BackColor = Color.Crimson;
+                    pantalla.colorAnterior = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
@@ -696,6 +715,7 @@ namespace Estacionamiento
                     car2.Start();
 
                     pantalla.B1.BackColor = Color.Crimson;
+                    pantalla.colorAnterior = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
@@ -719,6 +739,7 @@ namespace Estacionamiento
                     car3.Start();
 
                     pantalla.B3.BackColor = Color.Crimson;
+                    pantalla.colorAnterior = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
@@ -746,6 +767,7 @@ namespace Estacionamiento
                     car4.Start();
 
                     pantalla.A3.BackColor = Color.Crimson;
+                    pantalla.colorAnterior = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
@@ -767,13 +789,16 @@ namespace Estacionamiento
                     car5.Start();
 
                     pantalla.A1.BackColor = Color.Crimson;
+                    pantalla.colorAnterior = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
                 else if (pantalla.Accion == "Descestacionar")
                 {
-                    Desestacionar_Carro5();
+                    DesestacionarCarro5();
                     car5.Start();
+
+                    cmdAplicacion.Text = "" + car5.ThreadState.ToString();
                     cmdAplicacion.Enabled = false;
                 }
             }

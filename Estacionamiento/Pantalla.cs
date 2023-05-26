@@ -252,7 +252,7 @@ namespace Estacionamiento
 
         }
 
-        Color colorAnterior;
+        public Color colorAnterior;
         public void CambiarFoco(Panel panelAN)
         {
             if (panelAN != null)
