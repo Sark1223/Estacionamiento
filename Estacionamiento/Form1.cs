@@ -340,9 +340,9 @@ namespace Estacionamiento
                             {
                                 pbCarro4.Size = new Size(56, 84);
                                 pbCarro4.Image = Properties.Resources.carro1___arriba;
-                                derecha2 = false;
+                                izquierda=false;
                             }
-                            if(!Arriba(pbCarro4, 445, arriba))
+                            if(!Arriba(pbCarro4, 648, arriba))
                             {
                                 if (arriba == true)
                                 {
@@ -350,7 +350,7 @@ namespace Estacionamiento
                                     pbCarro4.Image = Properties.Resources.carro1___derecha;
                                     arriba=false;
                                 }
-                                if (!Derecha(pbCarro4, 648, true))
+                                if (!Derecha(pbCarro4, 458, true))
                                 {
                                     MessageBox.Show("El se estaciono correctamente.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                     cmdAplicacion.Enabled = true;
@@ -372,7 +372,7 @@ namespace Estacionamiento
             bool izquierda1 = true, abajo1 = true;
             while (true)
             {
-                if (!Izquierda(pbCarro4, 445, izquierda1))
+                if (!Izquierda(pbCarro4, 350, izquierda1))
                 {
                     if (izquierda1 == true)
                     {
@@ -380,7 +380,7 @@ namespace Estacionamiento
                         pbCarro4.Image = Properties.Resources.carro1___abajo;
                         izquierda1 = false;
                     }
-                    if (!Abajo(pbCarro4, pbFlechaIzq.Location.X, abajo1))
+                    if (!Abajo(pbCarro4, pnLimAbajo.Location.Y, abajo1))
                     {
                         if (abajo1 == true)
                         {
