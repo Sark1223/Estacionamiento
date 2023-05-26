@@ -50,7 +50,7 @@ namespace Estacionamiento
         //Metodo Carro 4
         public void EstacionarCarro4()
         {
-            car4 = new Thread(new ThreadStart(EstacionarCarro4));
+            car4 = new Thread(new ThreadStart(Estacionar_Carro4));
         }
         public void Estacionar_carro1()
         {
