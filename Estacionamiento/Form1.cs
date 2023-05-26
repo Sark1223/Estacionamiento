@@ -28,7 +28,7 @@ namespace Estacionamiento
         Thread car2;
         Thread car3;
         Thread car4;
-
+        Thread car5;
 
         //Metodos Carro 1
         public void EstacionarCarro1()
@@ -51,6 +51,11 @@ namespace Estacionamiento
         public void EstacionarCarro4()
         {
             car4 = new Thread(new ThreadStart(Estacionar_Carro4));
+        }
+        //Metodo Carro 5
+        public void EstacionarCarro5()
+        {
+            car5 = new Thread(new ThreadStart(Estacionar_Carro5));
         }
         public void Estacionar_carro1()
         {
@@ -436,6 +441,92 @@ namespace Estacionamiento
                 Thread.Sleep(20);
             }
         }
+        public void Estacionar_Carro5()
+        {
+            pbCarro5.Image = Properties.Resources.carro3___derecha;
+            bool derecha1 = true, izquierda1 = true, abajo1 = true, arriba1 = true;
+            while (true)
+            {
+                if (!Derecha(pbCarro5, pnAbajo.Location.X, derecha1))
+                {
+                    if (derecha1 == true)
+                    {
+                        pbCarro5.Size = new Size(56, 84);
+                        pbCarro5.Image = Properties.Resources.carro3___abajo;
+                        derecha1 = false;
+                    }
+                    if (!Abajo(pbCarro5, pnLimAbajo.Location.Y, abajo1))
+                    {
+                        if (abajo1 == true)
+                        {
+                            pbCarro5.Size = new Size(92, 55);
+                            pbCarro5.Image = Properties.Resources.carro3___izquierda;
+                            pbCarro5.Location = new Point(587, 494);//690, 471
+                            abajo1 = false;
+                        }
+                        if (!Izquierda(pbCarro5, pbFlechaIzq.Location.X, izquierda1))
+                        {
+                            if (izquierda1 == true)
+                            {
+                                pbCarro5.Size = new Size(56, 84);
+                                pbCarro5.Image = Properties.Resources.carro3___arriba;
+                                izquierda1 = false;
+                            }
+                            if (!Arriba(pbCarro5, pbFlechaAriba.Location.Y, arriba1))
+                            {
+                                if (arriba1 == true)
+                                {
+                                    pbCarro5.Size = new Size(92, 55);
+                                    pbCarro5.Image = Properties.Resources.carro3___derecha;
+                                    arriba1 = false;
+                                }
+                                if (!Derecha(pbCarro5,511, true))
+                                {
+                                    MessageBox.Show("El se estaciono correctamente.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                    pantalla.Lugar = "Ninguno";
+                                    cmdAplicacion.Enabled = true;
+                                    car5.Abort();
+                                }
+                            }
+                        }
+                    }
+                }
+                Thread.Sleep(20);
+            }
+        }
+        public void Desestacionar_Carro5()
+        {
+            bool izquierda1 = true, abajo1 = true;
+            while (true)
+            {
+                if (!Izquierda(pbCarro5, 495, izquierda1))
+                {
+                    if (izquierda1 == true)
+                    {
+                        pbCarro5.Size = new Size(56, 84);
+                        pbCarro5.Image = Properties.Resources.carro3___abajo;
+                        izquierda1 = false;
+                    }
+                    if (!Abajo(pbCarro5, pnLimAbajo.Location.Y, abajo1))
+                    {
+                        if (abajo1 == true)
+                        {
+                            pbCarro5.Size = new Size(92, 55);
+                            pbCarro5.Image = Properties.Resources.carro3___izquierda;
+                            pbCarro5.Location = new Point(pbCarro5.Location.X - pbCarro5.Width, pbCarro5.Location.Y);
+                            abajo1 = false;
+                        }
+                        if (!Izquierda(pbCarro5, 0 - pbCarro5.Width, true))
+                        {
+                            MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            cmdAplicacion.Enabled = true;
+                            car5.Abort();
+                        }
+                    }
+                }
+                Thread.Sleep(20);
+            }
+        }
         public bool Izquierda(PictureBox carro, int posicionMax, bool izquierda)
         {
             if (carro.Location.X > posicionMax && izquierda == true)
@@ -544,6 +635,18 @@ namespace Estacionamiento
                     pantalla.A3.BackColor = Color.Crimson;
                 }
             }
+            else if (pantalla.Lugar == pantalla.lblA1.Text)
+            {
+                if (pantalla.Accion == "Estacionar")
+                {
+                    pbCarro5.Visible = true;
+                    EstacionarCarro5();
+                    car5.Start();
+                    cmdAplicacion.Enabled = false;
+
+                    pantalla.A1.BackColor = Color.Crimson;
+                }
+            }
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -607,7 +710,7 @@ namespace Estacionamiento
                 {
                     pbCarro3.Location = new Point(0 - pbCarro3.Width, 110);
                     pbCarro3.Visible = true;
-                    EstacionarCarro1();
+                    EstacionarCarro3();
                     car3.Start();
 
                     pantalla.B3.BackColor = Color.Crimson;
@@ -647,7 +750,27 @@ namespace Estacionamiento
                     car4.Start();
                     cmdAplicacion.Enabled = false;
                 }
+            }
+            //carro 5
+            else if (pantalla.Lugar == pantalla.lblA1.Text)
+            {
+                if (pantalla.Accion == "Estacionar")
+                {
+                    pbCarro5.Location = new Point(0 - pbCarro5.Width, 110);
+                    pbCarro5.Visible = true;
+                    EstacionarCarro5();
+                    car5.Start();
 
+                    pantalla.A1.BackColor = Color.Crimson;
+
+                    cmdAplicacion.Enabled = false;
+                }
+                else if (pantalla.Accion == "Descestacionar")
+                {
+                    Desestacionar_Carro5();
+                    car5.Start();
+                    cmdAplicacion.Enabled = false;
+                }
             }
         }
     }
