@@ -52,6 +52,11 @@ namespace Estacionamiento
                     //A2.BackColor = Color.Crimson;
                     carro2 = "Estacionado";
                 }
+                else if (Lugar == "B3")
+                {
+                    //A2.BackColor = Color.Crimson;
+                    carro3 = "Estacionado";
+                }
                 this.Close();
             }
         }
@@ -80,6 +85,10 @@ namespace Estacionamiento
                 else if(Lugar == "B1")
                 {
                     carro2 = "Descestacionado";
+                }
+                else if (Lugar == "B3")
+                {
+                    carro3 = "Descestacionado";
                 }
                 this.Close();
             }

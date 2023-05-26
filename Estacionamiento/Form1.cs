@@ -35,17 +35,17 @@ namespace Estacionamiento
             car1 = new Thread(new ThreadStart(Estacionar_carro1));
         }
 
-        //Metodos Carro 1
+        //Metodos Carro 2
         public void EstacionarCarro2()
         {
             car2 = new Thread(new ThreadStart(Estacionar_carro2));
         }
 
-        ////Metodos Carro 1
-        //public void EstacionarCarro3()
-        //{
-        //    car1 = new Thread(new ThreadStart(Estacionar_carro3));
-        //}
+        ////Metodos Carro 3
+        public void EstacionarCarro3()
+        {
+            car3 = new Thread(new ThreadStart(Estacionar_carro3));
+        }
 
         public void Estacionar_carro1()
         {
@@ -140,7 +140,7 @@ namespace Estacionamiento
 
         public void Estacionar_carro2()
         {
-            bool derecha = true, izquierda = true, abajo = true, arriba = true, derecha2 = false; 
+            bool derecha = true, abajo = true, derecha2 = false; 
             while (true)
             {
                 if (!Derecha(pbCarro2, pnAbajo.Location.X, derecha))
@@ -151,7 +151,7 @@ namespace Estacionamiento
                         pbCarro2.Image = Properties.Resources.carro2___abajo;
                         derecha = false;
                     }
-                    if (!Abajo(pbCarro2, 202, abajo))
+                    if (!Abajo(pbCarro2, 201, abajo))
                     {
                         if (abajo == true)
                         {
@@ -167,24 +167,14 @@ namespace Estacionamiento
                             {
                                 pbCarro2.Size = new Size(92, 55);
                                 pbCarro2.Image = Properties.Resources.carro2___derecha;
-                                //pbCarro2.Location = new Point(870, 201);
                                 derecha2 = false;
                             }
-                            //if (!Arriba(pbCarro2, pbFlechaAriba.Location.Y, arriba))
-                            //{
-                            //    if (arriba == true)
-                            //    {
-                            //        pbCarro2.Size = new Size(92, 55);
-                            //        pbCarro2.Image = Properties.Resources.carro2___derecha;
-                            //        arriba = false;
-                            //    }
                             if (!Derecha(pbCarro2, 870, true))
                             {
                                 MessageBox.Show("El se estaciono correctamente.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 cmdAplicacion.Enabled = true;
                                 car2.Abort();
                             }
-                            //}
                         }
                     }
                 }
@@ -195,7 +185,7 @@ namespace Estacionamiento
 
         public void DesestacionarCarro2()
         {
-            car1 = new Thread(new ThreadStart(Desestacionar_carro2));
+            car2 = new Thread(new ThreadStart(Desestacionar_carro2));
         }
 
         public void Desestacionar_carro2()
@@ -203,28 +193,72 @@ namespace Estacionamiento
             bool izquierda1 = true, abajo1 = true;
             while (true)
             {
-                if (!Izquierda(pbCarro1, pbFlechaAriba.Location.X, izquierda1))
+                if (!Izquierda(pbCarro2, 690, izquierda1))
                 {
                     if (izquierda1 == true)
                     {
-                        pbCarro1.Size = new Size(56, 84);
-                        pbCarro1.Image = Properties.Resources.carro1___abajo;
+                        pbCarro2.Size = new Size(56, 84);
+                        pbCarro2.Image = Properties.Resources.carro2___abajo;
                         izquierda1 = false;
                     }
-                    if (!Abajo(pbCarro1, pnLimAbajo.Location.Y, abajo1))
+                    if (!Abajo(pbCarro2, pnLimAbajo.Location.Y, abajo1))
                     {
-                        if (abajo1 == true)
+                        if (abajo1== true)
                         {
-                            pbCarro1.Size = new Size(92, 55);
-                            pbCarro1.Image = Properties.Resources.carro1__izquierda;
-                            pbCarro1.Location = new Point(pbCarro1.Location.X - pbCarro1.Width, pbCarro1.Location.Y);
+                            pbCarro2.Size = new Size(92, 55);
+                            pbCarro2.Image = Properties.Resources.carro2___izquierda;
+                            pbCarro2.Location = new Point(pbCarro2.Location.X - pbCarro2.Width, pbCarro2.Location.Y);
                             abajo1 = false;
                         }
-                        if (!Izquierda(pbCarro1, 0 - pbCarro1.Width, true))
+                        if (!Izquierda(pbCarro2, 0 - pbCarro2.Width, true))
                         {
                             MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             cmdAplicacion.Enabled = true;
-                            car1.Abort();
+                            car2.Abort();
+                        }
+                    }
+                }
+                Thread.Sleep(20);
+            }
+        }
+
+        public void Estacionar_carro3()
+        {
+            bool derecha = true, abajo = true, derecha2 = false;
+            while (true)
+            {
+                if (!Derecha(pbCarro3, pnAbajo.Location.X, derecha))
+                {
+                    if (derecha == true)
+                    {
+                        pbCarro3.Size = new Size(56, 84);
+                        pbCarro3.Image = Properties.Resources.carro3___abajo;
+                        derecha = false;
+                    }
+                    if (!Abajo(pbCarro3, 370, abajo))
+                    {
+                        if (abajo == true)
+                        {
+                            pbCarro3.Size = new Size(92, 55);
+                            pbCarro3.Image = Properties.Resources.carro3___derecha;
+                            pbCarro3.Location = new Point(690, 375);//690, 471
+                            abajo = false;
+                            derecha2 = true;
+                        }
+                        if (!Derecha(pbCarro3, 870, derecha2))
+                        {
+                            if (derecha2 == true)
+                            {
+                                pbCarro3.Size = new Size(92, 55);
+                                pbCarro3.Image = Properties.Resources.carro3___derecha;
+                                derecha2 = false;
+                            }
+                            if (!Derecha(pbCarro3, 870, true))
+                            {
+                                MessageBox.Show("El se estaciono correctamente.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                cmdAplicacion.Enabled = true;
+                                car3.Abort();
+                            }
                         }
                     }
                 }
@@ -233,57 +267,44 @@ namespace Estacionamiento
         }
 
 
-        //public void Estacionar_carro3()
-        //{
-        //    bool derecha1 = true, izquierda1 = true, abajo1 = true, arriba1 = true;
-        //    while (true)
-        //    {
-        //        if (!Derecha(pbCarro1, pnAbajo.Location.X, derecha1))
-        //        {
-        //            if (derecha1 == true)
-        //            {
-        //                pbCarro2.Size = new Size(56, 84);
-        //                pbCarro2.Image = Properties.Resources.carro2___abajo;
-        //                derecha1 = false;
-        //            }
-        //            if (!Abajo(pbCarro2, pnLimAbajo.Location.Y, abajo1))
-        //            {
-        //                if (abajo1 == true)
-        //                {
-        //                    pbCarro2.Size = new Size(92, 55);
-        //                    pbCarro2.Image = Properties.Resources.carro2___izquierda;
-        //                    pbCarro2.Location = new Point(587, 494);//690, 471
-        //                    abajo1 = false;
-        //                }
-        //                if (!Izquierda(pbCarro2, pbFlechaIzq.Location.X, izquierda1))
-        //                {
-        //                    if (izquierda1 == true)
-        //                    {
-        //                        pbCarro2.Size = new Size(56, 84);
-        //                        pbCarro2.Image = Properties.Resources.carro2___arriba;
-        //                        izquierda1 = false;
-        //                    }
-        //                    if (!Arriba(pbCarro2, pbFlechaAriba.Location.Y, arriba1))
-        //                    {
-        //                        if (arriba1 == true)
-        //                        {
-        //                            pbCarro2.Size = new Size(92, 55);
-        //                            pbCarro2.Image = Properties.Resources.carro2___derecha;
-        //                            arriba1 = false;
-        //                        }
-        //                        if (!Derecha(pbCarro2, 486, true))
-        //                        {
-        //                            MessageBox.Show("El se estaciono correctamente.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //                            cmdAplicacion.Enabled = true;
-        //                            car2.Abort();
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //        }
-        //        Thread.Sleep(20);
-        //    }
-        //}
+        public void DesestacionarCarro3()
+        {
+            car3 = new Thread(new ThreadStart(Desestacionar_carro3));
+        }
+
+        public void Desestacionar_carro3()
+        {
+            bool izquierda1 = true, abajo1 = true;
+            while (true)
+            {
+                if (!Izquierda(pbCarro3, 690, izquierda1))
+                {
+                    if (izquierda1 == true)
+                    {
+                        pbCarro3.Size = new Size(56, 84);
+                        pbCarro3.Image = Properties.Resources.carro3___abajo;
+                        izquierda1 = false;
+                    }
+                    if (!Abajo(pbCarro3, pnLimAbajo.Location.Y, abajo1))
+                    {
+                        if (abajo1 == true)
+                        {
+                            pbCarro3.Size = new Size(92, 55);
+                            pbCarro3.Image = Properties.Resources.carro3___izquierda;
+                            pbCarro3.Location = new Point(pbCarro3.Location.X - pbCarro3.Width, pbCarro3.Location.Y);
+                            abajo1 = false;
+                        }
+                        if (!Izquierda(pbCarro3, 0 - pbCarro3.Width, true))
+                        {
+                            MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            cmdAplicacion.Enabled = true;
+                            car3.Abort();
+                        }
+                    }
+                }
+                Thread.Sleep(20);
+            }
+        }
 
 
         public bool Izquierda(PictureBox carro, int posicionMax, bool izquierda)
@@ -370,6 +391,18 @@ namespace Estacionamiento
                     pantalla.B1.BackColor = Color.Crimson;
                 }
             }
+            else if (pantalla.Lugar == pantalla.lblB3.Text)
+            {
+                if (pantalla.Accion == "Estacionar")
+                {
+                    pbCarro3.Visible = true;
+                    EstacionarCarro3();
+                    car3.Start();
+                    cmdAplicacion.Enabled = false;
+
+                    pantalla.B3.BackColor = Color.Crimson;
+                }
+            }
         }
 
         private void pictureBox10_Click(object sender, EventArgs e)
@@ -431,19 +464,19 @@ namespace Estacionamiento
             {
                 if (pantalla.Accion == "Estacionar")
                 {
-                    pbCarro1.Location = new Point(0 - pbCarro1.Width, 110);
-                    pbCarro1.Visible = true;
+                    pbCarro3.Location = new Point(0 - pbCarro3.Width, 110);
+                    pbCarro3.Visible = true;
                     EstacionarCarro1();
-                    car1.Start();
+                    car3.Start();
 
-                    pantalla.A2.BackColor = Color.Crimson;
+                    pantalla.B3.BackColor = Color.Crimson;
 
                     cmdAplicacion.Enabled = false;
                 }
                 else if (pantalla.Accion == "Descestacionar")
                 {
-                    DesestacionarCarro1();
-                    car1.Start();
+                    DesestacionarCarro3();
+                    car3.Start();
                     cmdAplicacion.Enabled = false;
                 }
 

@@ -684,6 +684,7 @@
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
             // 
             // pictureBox7
             // 
@@ -694,6 +695,7 @@
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             // 
             // pictureBox6
             // 
@@ -704,6 +706,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
             // 
             // pictureBox5
             // 
@@ -714,6 +717,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 14;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
             // 
             // pictureBox4
             // 
@@ -734,6 +738,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 12;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // pictureBox2
             // 
@@ -744,6 +749,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 11;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -754,6 +760,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // pbCarro3
             // 
@@ -800,6 +807,7 @@
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox15.TabIndex = 46;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Visible = false;
             // 
             // cmdAplicacion
             // 
@@ -858,7 +866,7 @@
             // pbCarro6
             // 
             this.pbCarro6.Image = global::Estacionamiento.Properties.Resources.carro2___derecha;
-            this.pbCarro6.Location = new System.Drawing.Point(870, 201);
+            this.pbCarro6.Location = new System.Drawing.Point(690, 372);
             this.pbCarro6.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro6.Name = "pbCarro6";
             this.pbCarro6.Size = new System.Drawing.Size(92, 58);
@@ -873,10 +881,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 601);
-            this.Controls.Add(this.pbCarro2);
-            this.Controls.Add(this.pbCarro6);
+            this.Controls.Add(this.pbCarro3);
+            this.Controls.Add(this.pbCarro1);
             this.Controls.Add(this.pbCarro5);
             this.Controls.Add(this.pbCarro4);
+            this.Controls.Add(this.pbCarro2);
+            this.Controls.Add(this.pbCarro6);
             this.Controls.Add(this.cmdAplicacion);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox11);
@@ -914,7 +924,6 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.pbCarro1);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -934,7 +943,6 @@
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pbFlechaIzq);
             this.Controls.Add(this.pictureBox12);
-            this.Controls.Add(this.pbCarro3);
             this.Controls.Add(this.pnLimAbajo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
