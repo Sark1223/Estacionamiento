@@ -284,25 +284,25 @@
             this.panel12.Location = new System.Drawing.Point(294, 72);
             this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(8, 115);
+            this.panel12.Size = new System.Drawing.Size(8, 89);
             this.panel12.TabIndex = 20;
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.Teal;
-            this.panel13.Location = new System.Drawing.Point(273, 210);
+            this.panel13.Location = new System.Drawing.Point(279, 165);
             this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(31, 223);
+            this.panel13.Size = new System.Drawing.Size(31, 302);
             this.panel13.TabIndex = 21;
             // 
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
-            this.panel14.Location = new System.Drawing.Point(294, 457);
+            this.panel14.Location = new System.Drawing.Point(294, 471);
             this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(8, 120);
+            this.panel14.Size = new System.Drawing.Size(8, 106);
             this.panel14.TabIndex = 22;
             // 
             // pnMotorSal
@@ -488,8 +488,8 @@
             // 
             this.pnBanqueta1.BackColor = System.Drawing.Color.Gray;
             this.pnBanqueta1.Controls.Add(this.pictureBox18);
-            this.pnBanqueta1.Controls.Add(this.panel34);
             this.pnBanqueta1.Controls.Add(this.panel35);
+            this.pnBanqueta1.Controls.Add(this.panel34);
             this.pnBanqueta1.Location = new System.Drawing.Point(315, 44);
             this.pnBanqueta1.Name = "pnBanqueta1";
             this.pnBanqueta1.Size = new System.Drawing.Size(660, 39);
@@ -511,16 +511,16 @@
             this.panel34.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel34.Location = new System.Drawing.Point(0, 0);
             this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(4, 35);
+            this.panel34.Size = new System.Drawing.Size(4, 39);
             this.panel34.TabIndex = 1;
             // 
             // panel35
             // 
             this.panel35.BackColor = System.Drawing.Color.Gold;
             this.panel35.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel35.Location = new System.Drawing.Point(0, 35);
+            this.panel35.Location = new System.Drawing.Point(4, 35);
             this.panel35.Name = "panel35";
-            this.panel35.Size = new System.Drawing.Size(660, 4);
+            this.panel35.Size = new System.Drawing.Size(656, 4);
             this.panel35.TabIndex = 0;
             // 
             // rdBanqueta1
@@ -737,6 +737,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 601);
+            this.Controls.Add(this.pnBanqueta1);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.pbCarro5);
             this.Controls.Add(this.pbCarro4);
@@ -746,7 +747,6 @@
             this.Controls.Add(this.pbCarro6);
             this.Controls.Add(this.cmdAplicacion);
             this.Controls.Add(this.pnBanqueta2);
-            this.Controls.Add(this.pnBanqueta1);
             this.Controls.Add(this.panel32);
             this.Controls.Add(this.panel33);
             this.Controls.Add(this.panel30);

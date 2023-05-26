@@ -26,7 +26,8 @@ namespace Estacionamiento
         {
             Close();
         }
-
+        int carrosEsta = 3;
+        int carrosDesta = 3;
         private void cmdEstacionar_Click(object sender, EventArgs e)
         {
             if(Lugar == "Ninguno")
@@ -71,6 +72,10 @@ namespace Estacionamiento
                     //A2.BackColor = Color.Crimson;
                     carro6 = "Estacionado";
                 }
+                carrosEsta++;
+                carrosDesta--;
+                label11.Text = "Ocupados: " + (carrosEsta);
+                label10.Text = "Disponibles: " + (carrosDesta);
                 this.Close();
             }
         }
@@ -116,6 +121,10 @@ namespace Estacionamiento
                 {
                     carro5 = "Descestacionado";
                 }
+                carrosEsta--;
+                carrosDesta++;
+                label11.Text = "Ocupados: " + (carrosEsta);
+                label10.Text = "Disponibles: " + (carrosDesta);
                 this.Close();
             }
         }
