@@ -374,40 +374,6 @@ namespace Estacionamiento
         {
             car4 = new Thread(new ThreadStart(Desestacionar_carro4));
         }
-        //public void Desestacionar_carro4()
-        //{
-        //    bool izquierda1 = true, abajo1 = true;
-        //    while (true)
-        //    {
-        //        if (!Izquierda(pbCarro4, 350, izquierda1))
-        //        {
-        //            if (izquierda1 == true)
-        //            {
-        //                pbCarro4.Size = new Size(56, 84);
-        //                pbCarro4.Image = Properties.Resources.carro1___abajo;
-        //                izquierda1 = false;
-        //            }
-        //            if (!Abajo(pbCarro4, pnLimAbajo.Location.Y, abajo1))
-        //            {
-        //                if (abajo1 == true)
-        //                {
-        //                    pbCarro4.Size = new Size(92, 55);
-        //                    pbCarro4.Image = Properties.Resources.carro1__izquierda;
-        //                    pbCarro4.Location = new Point(pbCarro4.Location.X - pbCarro4.Width, pbCarro4.Location.Y);
-        //                    abajo1 = false;
-        //                }
-        //                if (!Izquierda(pbCarro4, 0 - pbCarro4.Width, true))
-        //                {
-        //                    MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //                    cmdAplicacion.Enabled = true;
-        //                    car4.Abort();
-        //                }
-        //            }
-        //        }
-        //        Thread.Sleep(20);
-        //    }
-        //}
-
         public void Desestacionar_carro4()
         {
             bool izquierda1 = true, abajo1 = true;
@@ -441,6 +407,7 @@ namespace Estacionamiento
                 Thread.Sleep(20);
             }
         }
+
         public void Estacionar_Carro5()
         {
             pbCarro5.Image = Properties.Resources.carro3___derecha;
@@ -494,12 +461,16 @@ namespace Estacionamiento
                 Thread.Sleep(20);
             }
         }
+        public void DesestacionarCarro5()
+        {
+            car5 = new Thread(new ThreadStart(Desestacionar_Carro5));
+        }
         public void Desestacionar_Carro5()
         {
             bool izquierda1 = true, abajo1 = true;
             while (true)
             {
-                if (!Izquierda(pbCarro5, 495, izquierda1))
+                if (!Izquierda(pbCarro5, 350, izquierda1))
                 {
                     if (izquierda1 == true)
                     {
@@ -527,6 +498,40 @@ namespace Estacionamiento
                 Thread.Sleep(20);
             }
         }
+        //public void Desestacionar_Carro5()
+        //{
+        //    bool izquierda1 = true, abajo1 = true;
+        //    while (true)
+        //    {
+        //        if (!Izquierda(pbCarro5, 495, izquierda1))
+        //        {
+        //            if (izquierda1 == true)
+        //            {
+        //                pbCarro5.Size = new Size(56, 84);
+        //                pbCarro5.Image = Properties.Resources.carro3___abajo;
+        //                izquierda1 = false;
+        //            }
+        //            if (!Abajo(pbCarro5, pnLimAbajo.Location.Y, abajo1))
+        //            {
+        //                if (abajo1 == true)
+        //                {
+        //                    pbCarro5.Size = new Size(92, 55);
+        //                    pbCarro5.Image = Properties.Resources.carro3___izquierda;
+        //                    pbCarro5.Location = new Point(pbCarro5.Location.X - pbCarro5.Width, pbCarro5.Location.Y);
+        //                    abajo1 = false;
+        //                }
+        //                if (!Izquierda(pbCarro5, 0 - pbCarro5.Width, true))
+        //                {
+        //                    MessageBox.Show("El carro salio con exito.", "ATENCIÓN", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        //                    cmdAplicacion.Enabled = true;
+        //                    car5.Abort();
+        //                }
+        //            }
+        //        }
+        //        Thread.Sleep(20);
+        //    }
+        //}
+
         public bool Izquierda(PictureBox carro, int posicionMax, bool izquierda)
         {
             if (carro.Location.X > posicionMax && izquierda == true)

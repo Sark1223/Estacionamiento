@@ -70,7 +70,7 @@ namespace Estacionamiento
             }
         }
 
-        string carro1 = "Descestacionado", carro2 = "Descestacionado", carro3 = "Descestacionado", carro4="Descestacionado",carro5= "Descestacionado";
+        string carro1 = "Descestacionado", carro2 = "Descestacionado", carro3 = "Descestacionado", carro4="Descestacionado",carro5="Descestacionado";
         private void cmdDesestacionar_Click(object sender, EventArgs e)
         {
             if (Lugar == "Ninguno")
@@ -99,11 +99,11 @@ namespace Estacionamiento
                 {
                     carro3 = "Descestacionado";
                 }
-                else if (Lugar == "Descestacionado")
+                else if (Lugar == "A3")
                 {
                     carro4 = "Descestacionado";
                 }
-                else if (Lugar == "Descestacionado")
+                else if (Lugar == "A1")
                 {
                     carro5 = "Descestacionado";
                 }
@@ -236,6 +236,11 @@ namespace Estacionamiento
         }
 
         Panel pnAnterior, pnActual;
+
+        private void A1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
 
         private void A2_Paint(object sender, PaintEventArgs e)
         {
