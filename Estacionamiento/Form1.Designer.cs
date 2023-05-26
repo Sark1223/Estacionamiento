@@ -82,26 +82,15 @@
             this.panel37 = new System.Windows.Forms.Panel();
             this.panel38 = new System.Windows.Forms.Panel();
             this.rdBanqueta2 = new ns1.BunifuElipse(this.components);
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pbFlechaAriba = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pnAbajo = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pbFlechaIzq = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbCarro3 = new System.Windows.Forms.PictureBox();
             this.pbCarro2 = new System.Windows.Forms.PictureBox();
             this.pbCarro1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.cmdAplicacion = new System.Windows.Forms.Button();
             this.pnLimAbajo = new System.Windows.Forms.Panel();
             this.rdcmdAplicacion = new ns1.BunifuElipse(this.components);
@@ -115,26 +104,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.pnBanqueta2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaAriba)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnAbajo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaIzq)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro6)).BeginInit();
@@ -205,7 +183,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Yellow;
             this.panel1.Location = new System.Drawing.Point(977, 81);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(193, 13);
             this.panel1.TabIndex = 1;
@@ -214,7 +192,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Yellow;
             this.panel5.Location = new System.Drawing.Point(977, 260);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(193, 13);
             this.panel5.TabIndex = 2;
@@ -223,7 +201,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Yellow;
             this.panel2.Location = new System.Drawing.Point(977, 449);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(193, 13);
             this.panel2.TabIndex = 2;
@@ -232,7 +210,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Yellow;
             this.panel3.Location = new System.Drawing.Point(977, 635);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(193, 13);
             this.panel3.TabIndex = 2;
@@ -241,7 +219,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Yellow;
             this.panel4.Location = new System.Drawing.Point(1160, 301);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(10, 46);
             this.panel4.TabIndex = 3;
@@ -250,7 +228,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Yellow;
             this.panel6.Location = new System.Drawing.Point(1160, 379);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(10, 46);
             this.panel6.TabIndex = 4;
@@ -259,7 +237,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Yellow;
             this.panel7.Location = new System.Drawing.Point(1160, 487);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(10, 46);
             this.panel7.TabIndex = 5;
@@ -268,7 +246,7 @@
             // 
             this.panel8.BackColor = System.Drawing.Color.Yellow;
             this.panel8.Location = new System.Drawing.Point(1160, 563);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(10, 46);
             this.panel8.TabIndex = 4;
@@ -277,7 +255,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.Yellow;
             this.panel9.Location = new System.Drawing.Point(1160, 184);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(10, 46);
             this.panel9.TabIndex = 6;
@@ -286,7 +264,7 @@
             // 
             this.panel10.BackColor = System.Drawing.Color.Yellow;
             this.panel10.Location = new System.Drawing.Point(1160, 117);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(10, 46);
             this.panel10.TabIndex = 4;
@@ -295,7 +273,7 @@
             // 
             this.pnMotorEn.BackColor = System.Drawing.Color.Gold;
             this.pnMotorEn.Location = new System.Drawing.Point(288, 48);
-            this.pnMotorEn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnMotorEn.Margin = new System.Windows.Forms.Padding(2);
             this.pnMotorEn.Name = "pnMotorEn";
             this.pnMotorEn.Size = new System.Drawing.Size(22, 25);
             this.pnMotorEn.TabIndex = 19;
@@ -304,7 +282,7 @@
             // 
             this.panel12.BackColor = System.Drawing.Color.White;
             this.panel12.Location = new System.Drawing.Point(294, 72);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel12.Margin = new System.Windows.Forms.Padding(2);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(8, 115);
             this.panel12.TabIndex = 20;
@@ -313,7 +291,7 @@
             // 
             this.panel13.BackColor = System.Drawing.Color.Teal;
             this.panel13.Location = new System.Drawing.Point(273, 210);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel13.Margin = new System.Windows.Forms.Padding(2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(31, 223);
             this.panel13.TabIndex = 21;
@@ -322,7 +300,7 @@
             // 
             this.panel14.BackColor = System.Drawing.Color.White;
             this.panel14.Location = new System.Drawing.Point(294, 457);
-            this.panel14.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel14.Margin = new System.Windows.Forms.Padding(2);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(8, 120);
             this.panel14.TabIndex = 22;
@@ -331,7 +309,7 @@
             // 
             this.pnMotorSal.BackColor = System.Drawing.Color.Gold;
             this.pnMotorSal.Location = new System.Drawing.Point(286, 575);
-            this.pnMotorSal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnMotorSal.Margin = new System.Windows.Forms.Padding(2);
             this.pnMotorSal.Name = "pnMotorSal";
             this.pnMotorSal.Size = new System.Drawing.Size(22, 25);
             this.pnMotorSal.TabIndex = 21;
@@ -594,17 +572,6 @@
             this.rdBanqueta2.ElipseRadius = 10;
             this.rdBanqueta2.TargetControl = this.pnBanqueta2;
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Estacionamiento.Properties.Resources.carro2___derecha;
-            this.pictureBox11.Location = new System.Drawing.Point(862, 286);
-            this.pictureBox11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(92, 58);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox11.TabIndex = 37;
-            this.pictureBox11.TabStop = false;
-            // 
             // pbFlechaAriba
             // 
             this.pbFlechaAriba.Image = global::Estacionamiento.Properties.Resources.arriba;
@@ -665,108 +632,11 @@
             this.pictureBox12.TabIndex = 40;
             this.pictureBox12.TabStop = false;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Estacionamiento.Properties.Resources.carro3___izquierda;
-            this.pictureBox9.Location = new System.Drawing.Point(95, 219);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(92, 56);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox9.TabIndex = 18;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Estacionamiento.Properties.Resources.carro2___izquierda;
-            this.pictureBox8.Location = new System.Drawing.Point(26, 410);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(92, 59);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Visible = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Estacionamiento.Properties.Resources.carro1___abajo;
-            this.pictureBox7.Location = new System.Drawing.Point(33, 507);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(56, 84);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 16;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Visible = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Estacionamiento.Properties.Resources.carro3___arriba;
-            this.pictureBox6.Location = new System.Drawing.Point(197, 239);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(56, 84);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Visible = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Estacionamiento.Properties.Resources.carro2___abajo;
-            this.pictureBox5.Location = new System.Drawing.Point(133, 388);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(68, 84);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Visible = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Estacionamiento.Properties.Resources.carro1__izquierda;
-            this.pictureBox4.Location = new System.Drawing.Point(87, 62);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(92, 54);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Estacionamiento.Properties.Resources.carro3___abajo;
-            this.pictureBox3.Location = new System.Drawing.Point(172, 137);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(63, 84);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Estacionamiento.Properties.Resources.carro2___arriba;
-            this.pictureBox2.Location = new System.Drawing.Point(26, 193);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(63, 84);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Estacionamiento.Properties.Resources.carro1___arriba;
-            this.pictureBox1.Location = new System.Drawing.Point(371, 176);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(63, 84);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // pbCarro3
             // 
             this.pbCarro3.Image = global::Estacionamiento.Properties.Resources.carro3___derecha;
-            this.pbCarro3.Location = new System.Drawing.Point(-62, 114);
-            this.pbCarro3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro3.Location = new System.Drawing.Point(-3, 72);
+            this.pbCarro3.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro3.Name = "pbCarro3";
             this.pbCarro3.Size = new System.Drawing.Size(92, 80);
             this.pbCarro3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -777,8 +647,8 @@
             // pbCarro2
             // 
             this.pbCarro2.Image = global::Estacionamiento.Properties.Resources.carro2___derecha;
-            this.pbCarro2.Location = new System.Drawing.Point(172, 467);
-            this.pbCarro2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro2.Location = new System.Drawing.Point(0, 83);
+            this.pbCarro2.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro2.Name = "pbCarro2";
             this.pbCarro2.Size = new System.Drawing.Size(92, 58);
             this.pbCarro2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -789,24 +659,14 @@
             // pbCarro1
             // 
             this.pbCarro1.Image = global::Estacionamiento.Properties.Resources.carro1___derecha;
-            this.pbCarro1.Location = new System.Drawing.Point(-62, 132);
-            this.pbCarro1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro1.Location = new System.Drawing.Point(0, 86);
+            this.pbCarro1.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro1.Name = "pbCarro1";
             this.pbCarro1.Size = new System.Drawing.Size(92, 55);
             this.pbCarro1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCarro1.TabIndex = 7;
             this.pbCarro1.TabStop = false;
             this.pbCarro1.Visible = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::Estacionamiento.Properties.Resources.carro1__izquierda;
-            this.pictureBox15.Location = new System.Drawing.Point(87, 167);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(92, 54);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 46;
-            this.pictureBox15.TabStop = false;
             // 
             // cmdAplicacion
             // 
@@ -842,7 +702,7 @@
             // 
             this.pbCarro4.Image = global::Estacionamiento.Properties.Resources.carro1___derecha;
             this.pbCarro4.Location = new System.Drawing.Point(486, 372);
-            this.pbCarro4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro4.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro4.Name = "pbCarro4";
             this.pbCarro4.Size = new System.Drawing.Size(92, 55);
             this.pbCarro4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -853,7 +713,7 @@
             // 
             this.pbCarro5.Image = global::Estacionamiento.Properties.Resources.carro3___derecha;
             this.pbCarro5.Location = new System.Drawing.Point(487, 203);
-            this.pbCarro5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro5.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro5.Name = "pbCarro5";
             this.pbCarro5.Size = new System.Drawing.Size(92, 56);
             this.pbCarro5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -863,14 +723,13 @@
             // pbCarro6
             // 
             this.pbCarro6.Image = global::Estacionamiento.Properties.Resources.carro2___derecha;
-            this.pbCarro6.Location = new System.Drawing.Point(33, 354);
-            this.pbCarro6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbCarro6.Location = new System.Drawing.Point(870, 288);
+            this.pbCarro6.Margin = new System.Windows.Forms.Padding(2);
             this.pbCarro6.Name = "pbCarro6";
             this.pbCarro6.Size = new System.Drawing.Size(92, 58);
             this.pbCarro6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCarro6.TabIndex = 51;
             this.pbCarro6.TabStop = false;
-            this.pbCarro6.Visible = false;
             // 
             // Form1
             // 
@@ -878,6 +737,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(975, 601);
+            this.Controls.Add(this.panel16);
             this.Controls.Add(this.pbCarro5);
             this.Controls.Add(this.pbCarro4);
             this.Controls.Add(this.pbCarro3);
@@ -885,8 +745,6 @@
             this.Controls.Add(this.pbCarro2);
             this.Controls.Add(this.pbCarro6);
             this.Controls.Add(this.cmdAplicacion);
-            this.Controls.Add(this.pictureBox15);
-            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.pnBanqueta2);
             this.Controls.Add(this.pnBanqueta1);
             this.Controls.Add(this.panel32);
@@ -906,21 +764,11 @@
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel13);
             this.Controls.Add(this.pnMotorSal);
             this.Controls.Add(this.pnMotorEn);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
@@ -954,26 +802,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.pnBanqueta2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaAriba)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pnAbajo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlechaIzq)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCarro6)).EndInit();
@@ -1000,15 +837,6 @@
         private System.Windows.Forms.PictureBox pbCarro3;
         private System.Windows.Forms.PictureBox pbCarro2;
         private System.Windows.Forms.PictureBox pbCarro1;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel pnMotorEn;
@@ -1025,7 +853,6 @@
         private System.Windows.Forms.Panel pnBanqueta1;
         private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Panel panel35;
-        private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.Panel panel33;
         private System.Windows.Forms.Panel panel30;
@@ -1055,7 +882,6 @@
         private System.Windows.Forms.PictureBox pbFlechaAriba;
         private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox19;
-        private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.Button cmdAplicacion;
         private System.Windows.Forms.Panel pnLimAbajo;
         private ns1.BunifuElipse rdcmdAplicacion;

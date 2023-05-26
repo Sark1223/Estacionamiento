@@ -66,11 +66,16 @@ namespace Estacionamiento
                     //A2.BackColor = Color.Crimson;
                     carro3 = "Estacionado";
                 }
+                else if (Lugar == "B2")
+                {
+                    //A2.BackColor = Color.Crimson;
+                    carro6 = "Estacionado";
+                }
                 this.Close();
             }
         }
 
-        string carro1 = "Descestacionado", carro2 = "Descestacionado", carro3 = "Descestacionado", carro4="Descestacionado",carro5="Descestacionado";
+        string carro1 = "Descestacionado", carro2 = "Descestacionado", carro3 = "Descestacionado", carro4="Descestacionado",carro5="Descestacionado", carro6 = "Descestacionado";
         private void cmdDesestacionar_Click(object sender, EventArgs e)
         {
             if (Lugar == "Ninguno")
@@ -94,6 +99,10 @@ namespace Estacionamiento
                 else if(Lugar == "B1")
                 {
                     carro2 = "Descestacionado";
+                }
+                else if (Lugar == "B2")
+                {
+                    carro6 = "Descestacionado";
                 }
                 else if (Lugar == "B3")
                 {

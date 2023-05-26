@@ -56,6 +56,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.rdFormaa = new ns1.BunifuElipse(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel17.SuspendLayout();
             this.panel16.SuspendLayout();
             this.pnContenedor.SuspendLayout();
@@ -75,7 +76,7 @@
             this.panel17.Controls.Add(this.panel16);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel17.Location = new System.Drawing.Point(0, 35);
-            this.panel17.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel17.Margin = new System.Windows.Forms.Padding(2);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(600, 405);
             this.panel17.TabIndex = 25;
@@ -93,7 +94,7 @@
             this.panel16.Controls.Add(this.cmdEstacionar);
             this.panel16.Controls.Add(this.cmdDesestacionar);
             this.panel16.Location = new System.Drawing.Point(21, 17);
-            this.panel16.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel16.Margin = new System.Windows.Forms.Padding(2);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(558, 365);
             this.panel16.TabIndex = 23;
@@ -312,6 +313,7 @@
             this.cmdEstacionar.Size = new System.Drawing.Size(149, 34);
             this.cmdEstacionar.TabIndex = 1;
             this.cmdEstacionar.Text = "Estacionar";
+            this.toolTip1.SetToolTip(this.cmdEstacionar, "Presione cualquier casilla para \r\nestacionar el carro");
             this.cmdEstacionar.UseVisualStyleBackColor = true;
             this.cmdEstacionar.Click += new System.EventHandler(this.cmdEstacionar_Click);
             // 
@@ -369,6 +371,11 @@
             this.rdFormaa.ElipseRadius = 20;
             this.rdFormaa.TargetControl = this;
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
             // Pantalla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -377,7 +384,7 @@
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Pantalla";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pantalla";
@@ -434,5 +441,6 @@
         public System.Windows.Forms.Label label9;
         public System.Windows.Forms.Panel panel4;
         public System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
